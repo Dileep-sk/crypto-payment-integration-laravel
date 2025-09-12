@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c514d8f7b9fc5970bdd94287905ef584",
+    "content-hash": "317a9a5fdf07df8492e149285f7a1500",
     "packages": [
         {
             "name": "brick/math",
@@ -2008,6 +2008,148 @@
                 }
             ],
             "time": "2024-12-08T08:18:47+00:00"
+        },
+        {
+            "name": "localtools/coinbase-commerce-sdk",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localtools/coinbase-commerce-sdk.git",
+                "reference": "db70fc2bbf9e10344e8ffcd161bc320b6914939d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localtools/coinbase-commerce-sdk/zipball/db70fc2bbf9e10344e8ffcd161bc320b6914939d",
+                "reference": "db70fc2bbf9e10344e8ffcd161bc320b6914939d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "localtools/php-http-client": "^0.0.1",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.18",
+                "pestphp/pest": "^3.2 || ^v3.5.1",
+                "phpunit/phpunit": "^8.5.40 || ^11.4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LocalTools\\CoinbaseCommerceSdk\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hebert",
+                    "email": "hebert@hotbrains.com.br",
+                    "homepage": "https://hotbrains.com.br"
+                }
+            ],
+            "description": "Coinbase commerce PHP API Wrapper",
+            "homepage": "https://hotbrains.com.br",
+            "keywords": [
+                "Usd Coin",
+                "api",
+                "bitcoin",
+                "bitcoin cash",
+                "coinbase",
+                "commerce",
+                "dai",
+                "ether",
+                "ethereum",
+                "litecoin",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/localtools/coinbase-commerce-sdk/issues",
+                "source": "https://github.com/localtools/coinbase-commerce-sdk/tree/v0.0.1"
+            },
+            "time": "2024-11-15T21:04:50+00:00"
+        },
+        {
+            "name": "localtools/php-http-client",
+            "version": "v0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/localtools/php-http-client.git",
+                "reference": "e975465992c9e8cc0f9338fe4450758573489a93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/localtools/php-http-client/zipball/e975465992c9e8cc0f9338fe4450758573489a93",
+                "reference": "e975465992c9e8cc0f9338fe4450758573489a93",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.0",
+                "php": "^7.2.5 || ^8.0"
+            },
+            "provide": {
+                "psr/http-client-implementation": "1.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.8.2",
+                "ext-curl": "*",
+                "pestphp/pest": "^1.23",
+                "php-http/client-integration-tests": "dev-master#2c025848417c1135031fdf9c728ee53d0a7ceaee as 3.0.999",
+                "php-http/message-factory": "^1.1",
+                "phpunit/phpunit": "^8.5.36 || ^9.6.15",
+                "psr/log": "^1.1 || ^2.0 || ^3.0"
+            },
+            "suggest": {
+                "ext-curl": "Required for CURL handler support",
+                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "PhpHttpClient\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hebert Cisco",
+                    "email": "hebertcisco@outlook.com",
+                    "homepage": "https://github.com/hebertcisco"
+                }
+            ],
+            "description": "Human-friendly and powerful HTTP client package for PHP",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "psr-18",
+                "psr-7",
+                "rest",
+                "web service"
+            ],
+            "support": {
+                "issues": "https://github.com/localtools/php-http-client/issues",
+                "source": "https://github.com/localtools/php-http-client/tree/v0.0.1"
+            },
+            "time": "2023-12-18T04:01:34+00:00"
         },
         {
             "name": "monolog/monolog",
