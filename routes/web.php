@@ -1,13 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\BookingController;
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('products');
+})->name('products');
 
+Route::get('/checkout', [BookingController::class, 'showBookingForm'])->name('show.payment.form');
 
-Route::get('/', [PaymentController::class, 'index']);
-Route::post('/pay', [PaymentController::class, 'create']);
-Route::post('/webhook', [PaymentController::class, 'webhook']);
-Route::get('/status', [PaymentController::class, 'status']);
+Route::post('/checkout', [BookingController::class, 'createCharge'])->name('checkout.process');
+
+Route::get('/payment-success', function () {
+    return view('payment-success');
+})->name('payment.success');
+
+Route::post('/webhook/coinbase', [BookingController::class, 'handleWebhook'])->name('webhook.coinbase');
